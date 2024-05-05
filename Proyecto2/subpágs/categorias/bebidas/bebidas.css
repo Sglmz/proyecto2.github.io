@@ -1,0 +1,67 @@
+body{
+    background: linear-gradient(#98d4ff,#2f2ffc);
+}
+.search-container {
+    width: auto;
+    text-align: center;
+    margin: 0 30%;
+}
+
+.search-input {
+    width: calc(100%);
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+.search-icon { 
+    color: #666;
+    cursor: pointer;
+}
+main{
+    text-align: center;
+}
+h1{
+    font-size: 70px;
+    margin: 0 0 15px 0;
+}
+.lomasvendido div{
+    width: 350px;
+    height: 250px;
+    background-color: white;
+    margin: 10px 20px 10px 0;
+    text-align: center;
+}
+.desayuno div{
+    width: 350px;
+    height: 250px;
+    background-color: white;
+    margin: 10px 20px 10px 0;
+    text-align: center;
+}
+.lomasvendido{
+    display: flex;
+}
+.desayuno{
+    display: flex;
+}
+button {
+    border: 2px solid #007bff; 
+    border-radius: 4px;
+    color: #007bff;
+    background: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+    transition: .4s;
+}
+
+button:hover {
+    background-color: #007bff;
+    color: #fff;
+    transition: .4s;
+}
