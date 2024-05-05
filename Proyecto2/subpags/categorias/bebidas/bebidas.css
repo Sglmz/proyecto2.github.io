@@ -1,17 +1,23 @@
-body{
+body {
     background: linear-gradient(#98d4ff,#2f2ffc);
+    margin: 0; /* Eliminar el margen predeterminado del body */
+    font-family: Arial, sans-serif; /* Añadir una fuente de texto genérica */
 }
+
 .search-container {
-    width: auto;
+    width: 100%; /* Utilizar el ancho completo del contenedor padre */
     text-align: center;
-    margin: 0 30%;
+    margin: 0 auto; /* Centrar horizontalmente */
+    max-width: 600px; /* Establecer un ancho máximo para evitar que el contenedor se vuelva demasiado ancho */
 }
-html{
+
+html {
     width: 100%;
     height: 100%;
 }
+
 .search-input {
-    width: calc(100%);
+    width: calc(100% - 40px); /* Restar el espacio del icono de búsqueda */
     padding: 10px;
     border: 2px solid #ccc;
     border-radius: 25px;
@@ -20,40 +26,39 @@ html{
     text-align: center;
 }
 
-.search-icon { 
+.search-icon {
     color: #666;
     cursor: pointer;
 }
-main{
+
+main {
     text-align: center;
+    margin: 50px auto; /* Centrar el contenido principal */
 }
-h1{
-    font-size: 70px;
+
+h1 {
+    font-size: 4em; /* Utilizar em para hacer que el tamaño del texto sea más adaptable */
     margin: 0 0 15px 0;
-    text-align: center;
 }
-.lomasvendido div{
-    width: 350px;
+
+.lomasvendido div,
+.desayuno div {
+    width: 100%; /* Utilizar el ancho completo del contenedor padre */
     height: 250px;
     background-color: white;
-    margin: 10px 20px 10px 0;
+    margin: 10px 0; /* Eliminar el margen derecho y ajustar el margen superior e inferior */
     text-align: center;
 }
-.desayuno div{
-    width: 350px;
-    height: 250px;
-    background-color: white;
-    margin: 10px 20px 10px 0;
-    text-align: center;
-}
-.lomasvendido{
+
+.lomasvendido,
+.desayuno {
     display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan cuando no haya suficiente espacio */
 }
-.desayuno{
-    display: flex;
-}
+
 button {
-    border: 2px solid #007bff; 
+    border: 2px solid #007bff;
     border-radius: 4px;
     color: #007bff;
     background: none;
@@ -68,4 +73,20 @@ button:hover {
     background-color: #007bff;
     color: #fff;
     transition: .4s;
+}
+.lomasvendido, .desayuno {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.lomasvendido div,
+.desayuno div {
+    width: calc(33.33% - 10px); 
+    height: 250px;
+    background-color: white;
+    margin: 10px 5px;
+    text-align: center;
+    width: 400px;
 }
