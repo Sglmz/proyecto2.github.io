@@ -136,12 +136,6 @@ h1 {
     gap: 15px;
 }
 
-.categories button,
-.categories a {
-    flex: 1 1 100%;
-    max-width: 230px;
-}
-
 .categories a {
     text-decoration: none;
 }

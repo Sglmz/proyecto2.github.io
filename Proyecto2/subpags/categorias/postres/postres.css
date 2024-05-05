@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(#74ceff, #2f96fc);
+    background: linear-gradient(white, #d4d4d4);
     margin: 0; /* Eliminar el margen predeterminado del body */
     font-family: Arial, sans-serif; /* Añadir una fuente de texto genérica */
 }
