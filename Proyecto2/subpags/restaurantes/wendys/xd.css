@@ -1,18 +1,13 @@
-body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     background-color: #d4d4d4;
-    font-size: 16px;
 }
 header{
     background: url(wendy.png);
     height: 200px;
     display: flex;
     justify-content: space-between;
-}
-header img {
-    width: 150px;
-    height: auto;
 }
 h1{
     margin: 0;  
@@ -61,8 +56,8 @@ button:hover {
 .o{
     display: flex;
 }
-.o a {
-    margin: 0 10px;
+.o a{
+    margin: 0 15px;
 }
 a{
     text-decoration: none;
@@ -76,14 +71,13 @@ img{
 .lomasvendido,
 .desayuno {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Centrar horizontalmente */
     gap: 20px;
 }
 
 .lomasvendido div,
 .desayuno div {
-    width: 100%;
-    margin: 10px 0;
+    text-align: center;
 }
 
 #link {
