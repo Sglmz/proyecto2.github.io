@@ -70,12 +70,12 @@ h1 {
 
 .img-responsive {
     display: grid;
-    justify-content: center; /* Centra el contenido horizontalmente */
+    justify-content: center;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 10px;
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
-    max-width: 1200px; /* Limita el ancho máximo */
-    padding: 0 20px; /* Agrega un espacio alrededor del contenedor */
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
 }
 
 .img-responsive img {
@@ -99,30 +99,33 @@ h1 {
     transition: .3s;
     cursor: pointer;
 }
-
 .restaurantes {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 20px; /* Espacio entre las imágenes */
 }
 
+/* Estilos para cada imagen */
 .restaurantes a {
-    width: calc(20% - 20px);
-    height: 300px;
-    overflow: hidden;
-    position: relative;
-    border-radius: 10px;
+    width: 300px;
+    height: 250px;
+    overflow: hidden; /* Evitar que las imágenes se desborden */
+    position: relative; /* Posicionamiento relativo */
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 0; /* Eliminar el margen predeterminado */
 }
 
+/* Estilos para las imágenes */
 .restaurantes img {
-    width: 80%;
-    height: 80%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajustar la imagen al contenedor */
+    transition: transform 0.3s ease; /* Agregar una transición suave para el efecto hover */
 }
 
+/* Efecto hover */
 .restaurantes a:hover img {
-    transform: scale(1.05);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05); /* Aumentar ligeramente el tamaño al hacer hover */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Agregar una sombra al hacer hover */
 }

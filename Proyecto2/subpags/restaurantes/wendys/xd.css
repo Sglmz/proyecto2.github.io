@@ -68,3 +68,20 @@ img{
     width: 200px;
     height: 150px;
 }
+.lomasvendido,
+.desayuno {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+.lomasvendido div,
+.desayuno div {
+    text-align: center; /* Alinear el contenido al centro */
+}
+
+#link {
+    display: block; /* Convertir en bloque para ocupar todo el ancho disponible */
+    text-align: center; /* Alinear el texto al centro */
+    margin: 20px 0; /* Margen superior e inferior para separar del contenido */
+}
