@@ -82,8 +82,8 @@ img{
 
 .lomasvendido div,
 .desayuno div {
-    width: 100%; /* Utilizar todo el ancho disponible en dispositivos móviles */
-    margin: 10px 0; /* Reducir el margen para dispositivos móviles */
+    width: 100%;
+    margin: 10px 0;
 }
 
 #link {
