@@ -42,7 +42,7 @@ h1 {
 }
 
 #hamburguesas {
-    background-color: #81C784; /* Verde */
+    background-color: #81C784; 
     color: white;
 }
 
@@ -128,4 +128,20 @@ h1 {
 .restaurantes a:hover img {
     transform: scale(1.05); /* Aumentar ligeramente el tamaño al hacer hover */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Agregar una sombra al hacer hover */
+}
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.categories button,
+.categories a {
+    flex: 1 1 100%;
+    max-width: 230px;
+}
+
+.categories a {
+    text-decoration: none;
 }
