@@ -1,0 +1,73 @@
+body{
+    background-image: url(../img/food.png);
+    color:whitesmoke;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+}
+li{
+    margin: 0 30px;
+    font-size: 30px;
+}
+#deli{
+    text-align: center;
+    margin-top: 80px;
+}
+h1{
+    font-size: 80px;
+    margin: 0;
+}
+h2{
+    font-size: 30px;
+    margin: 2px 0 15px;
+}
+button{
+    padding: 15px 30px;
+}
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="%23333" d="M12.354 4.646a.5.5 0 0 1 .792.608l-.057.07-4 4a.5.5 0 0 1-.708-.708l.07-.057L12 5.793 8.354 2.146a.5.5 0 1 1 .708-.708l.07.057 4 4a.5.5 0 0 1-.057.768l-.07.057-4 4a.5.5 0 0 1-.768-.057l-.057-.07 4-4z"/><path fill="%23333" d="M12 3h-8a.5.5 0 0 1-.09-.992L4 2.88V1.5a.5.5 0 1 1 1 0V2h4V1.5a.5.5 0 1 1 1 0V2.88l.09-.372A.5.5 0 0 1 12 3z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+}
+.custom-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; 
+    color: white; 
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    animation: pulse 2s infinite; 
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1); 
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

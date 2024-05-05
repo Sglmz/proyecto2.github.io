@@ -1,0 +1,101 @@
+body {
+    background-color: #d4d4d4;
+    color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.categories a {
+    text-decoration: none;
+}
+
+.categories button {
+    padding: 20px 40px; /* Aumentar el relleno interno para hacer los botones más grandes */
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px; /* Aumentar el tamaño de la fuente */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Estilos de los botones por categoría */
+#carne {
+    background-color: #E57373; /* Rojo */
+    color: white;
+}
+
+#postre {
+    background-color: #FFB74D; /* Naranja */
+    color: white;
+}
+
+#hamburguesas {
+    background-color: #81C784; /* Verde */
+    color: white;
+}
+
+#pollo {
+    background-color: #64B5F6; /* Azul */
+    color: white;
+}
+
+#bebidas {
+    background-color: #9575CD; /* Morado */
+    color: white;
+}
+
+/* Efecto hover */
+.categories button:hover {
+    opacity: 0.8;
+}
+
+.restaurantes {
+    margin: 3% 0 1% 0;
+    width: auto;
+    text-align: center;
+    height: 30px;
+}
+
+.img-responsive {
+    display: grid;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    max-width: 1200px; /* Limita el ancho máximo */
+    padding: 0 20px; /* Agrega un espacio alrededor del contenedor */
+}
+
+.img-responsive img {
+    width: 100%;
+    height: 80%;
+    transition: .3s;
+}
+#don{
+    height: 180px;
+    width: 230px;
+    margin: 40px auto auto auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.img-responsive a{
+    margin: auto 20px;
+}
+
+.img-responsive img:hover {
+    transform: scale(1.2);
+    transition: .3s;
+    cursor: pointer;
+}
