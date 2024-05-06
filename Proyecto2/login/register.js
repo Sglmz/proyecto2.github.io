@@ -9,4 +9,3 @@ document.getElementById('registerForm').addEventListener('submit', function(even
     alert('Usuario creado con éxito');
     window.location.href = 'login.html';
   });
-  
