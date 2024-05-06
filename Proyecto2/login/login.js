@@ -8,7 +8,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     var storedPassword = localStorage.getItem('password');
     
     if (username === storedUsername && password === storedPassword) {
-      alert('Bienvenido!');
+      alert('Bienvenido, '+username+'!');
       window.location.href = '../index.html';
     } else {
       alert('Nombre de usuario o contraseña incorrectos.');
