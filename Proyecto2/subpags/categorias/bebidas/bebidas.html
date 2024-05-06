@@ -10,19 +10,21 @@
     <main>
     <h1>Bebidas</h1>
     <div class="search-container">
-        <input type="search" class="search-input" placeholder="Buscar...">
+        <input type="search" id="searchInput" class="search-input" placeholder="Buscar...">
+        <button onclick="searchDiv()" id="buscador">Buscar</button>
         <i class="fas fa-search search-icon"></i>
-    </div>
+    </div> 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </main>
-<div class="lomasvendido">
-    
-    <div><img src="../../../img/cofee.png" alt="melt">
-    <p>The cofee cup</p><button>ver menú</button></div>
-    <div><img src="../../../img/star.jpg" alt="dave">
-    <p>Starbucks</p><button>ver menú</button></div>
-    <div><img src="../../../img/Las-Brumas-logo-1.png" alt="">
-    <p>Las brumas Grill & Café</p><button>ver menú</button></div>
+
+<div id="lomasvendido" class="lomasvendido">
+    <div id="The cofee cup" class="item"><img src="../../../img/cofee.png" alt="melt">
+        <p>The coffee cup</p><button>ver menú</button></div>
+    <div id="Starbucks" class="item"><img src="../../../img/star.jpg" alt="dave">
+        <p>Starbucks</p><button>ver menú</button></div>
+    <div id="Las Brumas" class="item"><img src="../../../img/Las-Brumas-logo-1.png" alt="">
+        <p>Las Brumas Grill & Café</p><button>ver menú</button></div>
 </div>
+<script src="../../../js/search.js"></script>
 </body>
 </html>
