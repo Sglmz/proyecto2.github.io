@@ -4,12 +4,12 @@ body{
     background-color: #d4d4d4;
 }
 header{
-    background: url(images.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url(im/banner.jpg);
     height: 200px;
+    background-size: cover;
     display: flex;
     justify-content: space-between;
+    background-repeat: no-repeat;
 }
 h1{
     margin: 0;  
@@ -69,7 +69,6 @@ a{
     font-size: 25px;
 }
 img{
-    margin-top: 25px;
     width: 200px;
     height: 150px;
 }
@@ -89,4 +88,9 @@ img{
     display: block;
     text-align: center;
     margin: 20px 0; 
+}
+img{
+    margin-top: 25px;
+    width: 200px;
+    height: 150px;
 }

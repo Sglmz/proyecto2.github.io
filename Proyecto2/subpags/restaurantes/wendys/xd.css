@@ -14,17 +14,19 @@ h1{
 }
 .lomasvendido div{
     width: 350px;
-    height: 250px;
+    height: 300px;
     background-color: white;
     margin: 10px 20px 10px 0;
     text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 .desayuno div{
     width: 350px;
-    height: 250px;
+    height: 300px;
     background-color: white;
     margin: 10px 20px 10px 0;
     text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 .lomasvendido{
     display: flex;
@@ -65,6 +67,7 @@ a{
     font-size: 25px;
 }
 img{
+    margin-top: 25px;
     width: 200px;
     height: 150px;
 }

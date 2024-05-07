@@ -82,11 +82,12 @@ button:hover {
 .lomasvendido div,
 .desayuno div {
     width: calc(33.33% - 10px); 
-    height: 250px;
+    height: 300px;
     background-color: white;
     margin: 10px 5px;
     text-align: center;
     width: 400px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 img{
     width: 35%;
