@@ -30,21 +30,23 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
-
-button {
-    background-color: #4CAF50;
-    border: none;
+.eliminar-btn {
+    background-color: #f44336; /* Rojo */
     color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    border: none;
+    padding: 5px 10px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    margin-left: 10px; /* Agregar espacio entre el texto y el botón */
 }
 
-button:hover {
-    background-color: #45a049;
+.eliminar-btn:hover {
+    background-color: #d32f2f; /* Rojo oscuro al pasar el ratón */
+}
+
+/* Estilos para los elementos de la lista */
+.lista-item {
+    margin-bottom: 10px; /* Agregar espacio entre los elementos de la lista */
 }
