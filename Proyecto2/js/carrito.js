@@ -1,36 +1,34 @@
 document.addEventListener("DOMContentLoaded", function() {
-    var cartItems = JSON.parse(localStorage.getItem('cartItems')) || []; // Obtener los elementos del carrito desde el almacenamiento local
+    var cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
     var listaPedidos = document.getElementById('lista-pedidos');
 
-    // Función para eliminar un elemento del carrito
+
     function eliminarItem(index) {
-        cartItems.splice(index, 1); // Eliminar el elemento del carrito
-        localStorage.setItem('cartItems', JSON.stringify(cartItems)); // Guardar los elementos del carrito actualizados en el almacenamiento local
-        renderizarLista(); // Volver a renderizar la lista de pedidos
+        cartItems.splice(index, 1); 
+        localStorage.setItem('cartItems', JSON.stringify(cartItems)); 
+        renderizarLista();
     }
 
-    // Función para renderizar la lista de pedidos
     function renderizarLista() {
-        listaPedidos.innerHTML = ''; // Limpiar la lista de pedidos
+        listaPedidos.innerHTML = '';
 
-        // Iterar sobre los elementos del carrito y agregarlos a la lista
+
         cartItems.forEach(function(item, index) {
             var li = document.createElement('li');
             li.textContent = item.name + ' - $' + item.value.toFixed(2);
-            li.classList.add('lista-item'); // Agregar clase de estilo para los elementos de la lista
+            li.classList.add('lista-item');
 
-            // Agregar botón de eliminación
             var btnEliminar = document.createElement('button');
             btnEliminar.textContent = 'Eliminar';
-            btnEliminar.classList.add('eliminar-btn'); // Agregar la clase de estilo al botón
+            btnEliminar.classList.add('eliminar-btn');
             btnEliminar.addEventListener('click', function() {
-                eliminarItem(index); // Llamar a la función para eliminar el elemento del carrito cuando se hace clic en el botón
+                eliminarItem(index);
             });
 
-            li.appendChild(btnEliminar); // Agregar botón de eliminación al elemento de la lista
+            li.appendChild(btnEliminar);
             listaPedidos.appendChild(li);
         });
     }
 
-    renderizarLista(); // Llamar a la función para renderizar la lista de pedidos al cargar la página
+    renderizarLista();
 });
