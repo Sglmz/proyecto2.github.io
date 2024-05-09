@@ -4,7 +4,7 @@ function verificarSesion() {
     var password = localStorage.getItem('password');
 
     if (!username && !password) {
-        window.location.href = '../proyect/login/login.html';
+        window.location.href = '../login/login.html';
     }
 }
 
@@ -13,5 +13,5 @@ window.onload = function() {
 };
 
 function cerrar() {
-    window.location.href = '../proyect/login/login.html';
+    window.location.href = '../login/login.html';
 }

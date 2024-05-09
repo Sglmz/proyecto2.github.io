@@ -3,21 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis Pedidos - Carrito de Delivery</title>
+    <title>Carrito de Delivery</title>
     <link rel="stylesheet" href="../css/carrito.css">
 </head>
 <body>
     <header>
-        <h1>Mis Pedidos</h1>
+        <h1>Mi carrito</h1>
     </header>
     <main>
         <section class="pedidos">
             <h2>Pedidos Realizados</h2>
             <ul id="lista-pedidos">
             </ul>
-        </section>
+            <a href="../pago/form.html" class="pagar-link">
+                <button id="pagar-btn">Pagar Todo</button>
+            </a>
+            <a href="../subpags/restaurantes.html" class="pagar-link">
+                <button id="pagar-btn">Seguir añadiendo</button>
+            </a>  
+        </section> 
     </main>
-    <a href="../pago/form.html"><button id="pagar-btn">Pagar</button></a>
+    
     <script src="../js/carrito.js"></script>
     <script src="../js/pago.js"></script>
 </body>
