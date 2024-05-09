@@ -3,11 +3,22 @@ body{
     margin: 0;
     background-color: #d4d4d4;
 }
-header{
-    background: url(wendy.png);
+header {
+    position: relative;
     height: 200px;
     display: flex;
     justify-content: space-between;
+}
+
+.blur-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(wendy.png) center/cover no-repeat;
+    filter: blur(5px);
+    z-index: -1;
 }
 h1{
     margin: 0;  
@@ -59,17 +70,19 @@ button:hover {
     display: flex;
 }
 .o a{
-    margin: 0 15px;
+    margin: 0px 15px;
 }
 a{
     text-decoration: none;
     color: black;
     font-size: 25px;
+    height: 30px;
 }
 img{
     margin-top: 25px;
     width: 200px;
-    height: 150px;
+    height: 150px;    
+    border-radius: 10px;
 }
 .lomasvendido,
 .desayuno {
